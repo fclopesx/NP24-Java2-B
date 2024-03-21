@@ -1,0 +1,41 @@
+package br.com.senaisp.bauru.fernanda.secao05;
+
+import javax.swing.JOptionPane;
+
+public class JavaLibsPractice {
+	public static void main(String[] args) {
+        String name = JOptionPane.showInputDialog("Enter your name");
+        
+        //Para sim ou não
+        boolean resp = JOptionPane.
+        		showConfirmDialog(null,
+        		"Você quer sair comigo?",
+        		"Participação",
+        		JOptionPane .YES_NO_OPTION,
+        		JOptionPane.QUESTION_MESSAGE)
+        		== JOptionPane.YES_OPTION;
+        //Para entrada de texto com valores padrão
+        String msg01 = (String)JOptionPane.showInputDialog(null,
+        		"Está é uma pergunta?",
+        		"Titulo da Caixa de Diálogo",
+        		JOptionPane.INFORMATION_MESSAGE,
+        		null,
+        		null,
+        		"Sim");
+        
+        String[] acceptableValues = {"Bar do Tatu", "Restaurante japonês", "Cinema"};
+        String input2 = (String)JOptionPane.showInputDialog(null,
+                "Onde?",
+                "Dialog Title",
+                JOptionPane.QUESTION_MESSAGE,
+                null,
+                acceptableValues,
+                acceptableValues[1]);
+	}
+
+	private static Object name(Object object, String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}
