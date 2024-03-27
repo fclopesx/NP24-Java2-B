@@ -1,0 +1,12 @@
+package br.com.senaisp.bauru.fernanda.licao06.lacofor;
+
+public class TestePoligonos {
+
+	public static void main(String[] args) {
+		Poligonos p1 = new Poligonos();
+		p1.montarQuadrados;
+		
+
+	}
+
+}

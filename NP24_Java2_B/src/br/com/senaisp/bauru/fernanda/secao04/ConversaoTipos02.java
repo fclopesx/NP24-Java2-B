@@ -6,11 +6,9 @@ public class ConversaoTipos02 {
 		// TODO Auto-generated method stub
 		byte num1 = 127;
 		num1++;
+		num1++;
 		System.out.println(num1);
-		System.out.println(int);3.5);
-		
-		
-
+		System.out.println((int)3.5);
 	}
 
 }
