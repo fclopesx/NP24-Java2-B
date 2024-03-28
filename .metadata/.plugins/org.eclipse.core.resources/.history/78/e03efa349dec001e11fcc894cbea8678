@@ -1,0 +1,12 @@
+package br.com.senaisp.bauru.fernanda.licao07.exercicio;
+
+public class MaquinaFliperama {
+	private Random rnd;
+	private int CustoCredito;
+	private String nomeJogo;
+	//Constructor
+	public MaquinaFliperama(String nome) {
+		nomeJogo = nome;
+	}
+
+}

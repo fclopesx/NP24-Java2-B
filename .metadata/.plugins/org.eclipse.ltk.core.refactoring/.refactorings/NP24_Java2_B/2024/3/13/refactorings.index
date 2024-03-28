@@ -2,3 +2,7 @@
 1711407424133	Delete element
 1711413372604	Copy compilation unit
 1711491264024	Delete element
+1711580027557	Encapsulate field 'agencia'
+1711580051995	Encapsulate field 'banco'
+1711580060538	Encapsulate field 'numeroConta'
+1711580068798	Encapsulate field 'saldo'
