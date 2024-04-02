@@ -1,0 +1,10 @@
+package br.com.senaisp.bauru.fernanda.licao08;
+
+public class ArrayListEx1 {
+
+    public static void main(String[] args) {
+        
+        
+    }
+    
+}

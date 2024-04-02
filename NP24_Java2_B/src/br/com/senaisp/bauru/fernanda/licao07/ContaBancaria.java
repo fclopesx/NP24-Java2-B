@@ -1,8 +1,8 @@
 package br.com.senaisp.bauru.fernanda.licao07;
 
 public class ContaBancaria {
-	//Field estaticos 
-	public static int ultNumero = 0;
+	//Fields estaticos
+	private static int ultNumero = 0;
 	//Fields
 	private int agencia;
 	private int banco;
@@ -12,40 +12,38 @@ public class ContaBancaria {
 	public ContaBancaria() {
 		banco = 123;
 		agencia = 1;
-		numeroConta = 0;
-		saldo = 50; ++ultNumero;
+		numeroConta = ++ultNumero;
+		saldo = 50;
 	}
-	
-	public ContaBancaria(int ba, int ag, int nc, double sa1) {
+	public ContaBancaria(int ba, int ag, int nc, double sal) {
 		setBanco(ba);
 		setAgencia(ag);
 		setNumeroConta(nc);
-		setSaldo(sa1);
-}
+		setSaldo(sal);
+	}
 	//Métodos
 	public int getAgencia() {
 		return agencia;
 	}
-	public int getBanco() {
-		return banco;
-	}
-	public int getNumeroConta() {
-		return numeroConta;
-	}
-	public double getSaldo() {
-		return saldo;
-	}
 	public void setAgencia(int agencia) {
 		this.agencia = agencia;
+	}
+	public int getBanco() {
+		return banco;
 	}
 	public void setBanco(int banco) {
 		this.banco = banco;
 	}
+	public int getNumeroConta() {
+		return numeroConta;
+	}
 	public void setNumeroConta(int numeroConta) {
 		this.numeroConta = numeroConta;
+	}
+	public double getSaldo() {
+		return saldo;
 	}
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
-
 }

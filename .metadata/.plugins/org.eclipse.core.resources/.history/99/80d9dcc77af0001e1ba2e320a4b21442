@@ -1,0 +1,7 @@
+package br.com.senaisp.bauru.fernanda.licao08;
+
+public class Baralho {
+	private Carta[] bar;
+	
+
+}

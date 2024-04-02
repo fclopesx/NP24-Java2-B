@@ -1,0 +1,18 @@
+package br.com.senaisp.bauru.fernanda.licao08;
+
+import java.util.Random;
+
+public class Baralho {
+	private Carta[] bar;
+	private Random rnd;
+	
+	public Baralho () {
+		bar = new Carta[52];
+		rnd = new Random();
+		for (int np=0;np<4np++) {
+			
+		}
+		
+	}
+
+}
