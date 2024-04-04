@@ -12,7 +12,7 @@ public class JogoBlackJack {
 		//Pedindo os nomes
 		System.out.println("Digite o nome do jogador 1:");
 		jogador1 = sc.nextLine();
-		
+
 		System.out.println("Digite o nome do jogador 2:");
 		jogador2 = sc.nextLine();
 		//Gerando as cartas para o Jogador 1
@@ -38,41 +38,37 @@ public class JogoBlackJack {
 		String cond = "S";
 		while(cond.equals("S")) {
 			System.out.println("Deseja mais cartas? (S/N)");
-			cond = sc.next();
+			cond = sc.nextLine();
 			//se sim, sorteamos uma carta
 			if (cond.equals("S")) {
 				ct = br.getCartaAleatoria();
 				score1 += ct.getValor();
 				System.out.println(ct);
-				
 			}
 		}
-		
 		//Agora vamos ao jogador 2
 		System.out.println("Hora do Player 2 receber cartas...");
 		do {
 			System.out.println("Deseja mais cartas? (S/N)");
-			cond = sc.next();
+			cond = sc.nextLine();
 			//se sim, sorteamos uma carta
 			if (cond.equals("S")) {
 				ct = br.getCartaAleatoria();
 				score2 += ct.getValor();
 				System.out.println(ct);
-			
-		}
-		}while (cond.equals("S"));
+			}
+		}while(cond.equals("S"));
 		//Hora de ver o vencedor!!
 		if (score1 == score2) {
 			System.out.println("Empate!!!");
 		} else if (score1>score2 && score1<22) {
 			System.out.println(jogador1 + " você é o vencedor!");
+		} else if (score2>score1 && score2<22){
+			System.out.println(jogador2 + " você é o vencedor!");
 		} else {
 			System.out.println("Ninguém venceu!!");
 		}
 		//Fechando o scanner
 		sc.close();
-		
-
-	}
-
-}	
+	}//Fim do main
+}//fim da classe
