@@ -30,14 +30,34 @@ public class TesteProdutoSimples {
 	}
 
 	private static void excluirProduto(Scanner sc) {
-		// TODO Auto-generated method stub
-	}
-
+		System.out.println("Exclusao de Produtos");
+		ProdutoSimples prd = pesquisarProduto(sc);
+		
+		//Confirmação de exclusão
+		System.out.println("Deseja cancelar a exclusão? (S/N)");
+		String res = sc.nextLine();
+		if (res.equalsIgnoreCase("N")) {
+			try {
+				prd.apagar();
+				
+			} catch (SQLException e) {
+				System.out.println(e.getMessage());
+				
+			}// fim do catch
+			
+			//Voltando para o menu
+			System.out.println("Digite algo para voltar ao menu");
+			sc.nextLine(); //captura do ultimo enter numérico
+			
 	private static void alterarProduto(Scanner sc) {
 		// TODO Auto-generated method stub
 	}
 
 	private static void consultarProduto(Scanner sc) {
+		pesquisarProduto(sc);
+	}
+
+	private static void pesquisarProduto(Scanner sc) {
 		System.out.println("Consulta de produtos");
 		System.out.println("Digite o código do produto a pesquisar:");
 		int cod = sc.nextInt();
@@ -47,6 +67,8 @@ public class TesteProdutoSimples {
 		ProdutoSimples prd = ProdutoSimples.findByPK(cod);
 		//Mostrando o produto
 		System.out.println(prd);
+		return prd; 
+		
 	} catch (Exception e) {
 		System.out.println(e.getMessage());
 	}

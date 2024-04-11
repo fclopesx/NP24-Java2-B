@@ -12,6 +12,19 @@
     <fullyQualifiedTypeName name="javax.naming.spi.DirStateFactory.Result"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="br.com.senaisp.bauru.fernanda.classes.ProdutoSimples"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="br.com.senaisp.bauru.fernanda.classes.ProdutoSimples"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="javafx.scene.effect.DropShadow"/>
+    <fullyQualifiedTypeName name="javafx.scene.text.TextAlignment"/>
+    <fullyQualifiedTypeName name="javafx.scene.image.Image"/>
+    <fullyQualifiedTypeName name="javafx.scene.image.ImageView"/>
+    <fullyQualifiedTypeName name="javafx.application.Application"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
+    <fullyQualifiedTypeName name="javafx.scene.Scene"/>
+    <fullyQualifiedTypeName name="javafx.stage.Stage"/>
+    <fullyQualifiedTypeName name="javafx.scene.shape.Polygon"/>
+    <fullyQualifiedTypeName name="javafx.scene.paint.LinearGradient"/>
+    <fullyQualifiedTypeName name="java.awt.MultipleGradientPaint.CycleMethod"/>
+    <fullyQualifiedTypeName name="javafx.scene.paint.CycleMethod"/>
 </qualifiedTypeNameHistroy>
